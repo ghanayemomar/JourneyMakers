@@ -73,6 +73,7 @@
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black,.15);
         transform: translateY(-2px);
+        border-radius: .2rem;
     }
     &:active{
         box-shadow: 0 .5rem 1rem rgba($color-black,.15);
