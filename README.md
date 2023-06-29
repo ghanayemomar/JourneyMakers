@@ -11,5 +11,5 @@
    - The 7-1 architecture, also known as the 7-1 pattern or SCSS architecture, is a popular way to organize and structure a large CSS codebase. It provides a scalable and modular approach for managing stylesheets in projects. The architecture consists of seven different directories and one main file.
  
  
-# Click me to open the website:
+# Link:
 https://ghanayemomar.github.io/Natours-WebPage/
