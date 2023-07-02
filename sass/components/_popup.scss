@@ -10,7 +10,7 @@
     visibility: hidden;
     transition: all .5s;
 
-    
+
 
     &__content {
         @include absCenter;
@@ -21,13 +21,32 @@
         display: table;
         overflow: hidden;
         opacity: 0;
-        transform: translate(-50%,-50%) scale(2);
+        transform: translate(-50%, -50%) scale(2);
         transition: all .4s;
+        position: relative;;
+
+
+        @include respond (tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 90vh;
+            overflow-y: scroll;
+        }
     }
 
     &__left {
         width: 33.33333%;
         display: table-cell;
+
+        @include respond (tab-port) {
+            height: 20%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__right {
@@ -36,11 +55,26 @@
         vertical-align: middle;
         padding: 3rem 5rem;
 
+        @include respond (tab-port) {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 2rem;
+            width: 100%;
+        }
+
     }
 
     &__img {
         display: block;
         width: 100%;
+        height: 100%;
+
+        @include respond (tab-port) {
+            width: 50%;
+            height: 100%;
+        }
     }
 
     &__text {
@@ -54,18 +88,22 @@
         -webkit-hyphens: auto;
         hyphens: auto;
     }
+
     &:target {
         opacity: 1;
         visibility: visible;
     }
-    &:target &__content{
+
+    &:target &__content {
         opacity: 1;
-        transform: translate(-50%,-50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
     }
-    &__close{
+
+    &__close {
+
         &:link,
-        &:visited{
-            color: $color-grey-dark;
+        &:visited {
+            color: $color-primary-dark;
             position: absolute;
             top: 2.5rem;
             right: 2.5rem;
@@ -75,9 +113,11 @@
             transition: all .2s;
             line-height: 1;
         }
-        &:hover{
+
+        &:hover {
             color: $color-primary-dark;
         }
     }
+
 
 }
