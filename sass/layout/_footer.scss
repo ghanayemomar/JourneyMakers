@@ -3,9 +3,17 @@
     padding: 10rem 0rem;
     font-size: 1.4rem;
 
+    @include respond(tab-port) {
+        padding: 8rem 0rem;
+    }
+
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
@@ -15,21 +23,25 @@
 
     &__navigation {
         border-top: 1px solid $color-grey-dark;
-        padding: 2rem;
+        padding-top: 2rem;
         display: inline-block;
-        text-align: center;
-        width: 100%;
+
+        @include respond(tab-port) {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     &__list {
         list-style: none;
+
     }
 
     &__item {
         display: inline-block;
 
         &:not(:last-child) {
-            margin-right: 4.5rem;
+            margin-right: 1.5rem;
         }
     }
 
