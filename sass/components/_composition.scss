@@ -51,7 +51,7 @@
             }
         }
 
-        @include respond(hover) {
+        @media only screen and(hover:hover) {
             &:hover {
                 outline: 1.5rem solid $color-primary;
                 transform: scale(1.05) translateY(-.5rem);
@@ -62,9 +62,12 @@
 
     }
 
-    &:hover &__photo:not(:hover) {
-        &:hover {
-            transform: scale(.95);
+    @media only screen and(hover:hover) {
+
+        &:hover &__photo:not(:hover) {
+            &:hover {
+                transform: scale(.95);
+            }
         }
     }
 }
