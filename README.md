@@ -1,5 +1,5 @@
 # JourneyMakers - JourneyMakers Website
-# This is a website showcasing various Journey offered by Natours. 
+# This is a website showcasing various Journey offered by JourneyMakers. 
 # The project utilizes advanced CSS code, animations, and Sass to create an engaging and visually appealing user experience.
 # Features:
  1 - Responsive design that adapts to different screen sizes and devices.<br>
