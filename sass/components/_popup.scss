@@ -10,6 +10,11 @@
     visibility: hidden;
     transition: all .5s;
 
+    @supports (-webkit-backdrop-filter:blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background: rgba($color-black, .3);
+    }
 
 
     &__content {
@@ -23,7 +28,8 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(2);
         transition: all .4s;
-        position: relative;;
+        position: relative;
+        ;
 
 
         @include respond (tab-port) {

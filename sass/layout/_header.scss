@@ -3,10 +3,9 @@
     background-image:
         linear-gradient(to right bottom,
             rgba($color-primary-light, 0.8),
-            rgba($color-primary-dark, 0.8)),
-        url(../img/hero.jpg);
+            rgba($color-primary-dark, 0.8));
     background-size: cover;
-    background-position: top;
+    background-position:50%;
     position: relative;
     clip-path:
         polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -25,9 +24,7 @@
         left: 4rem;
     }
 
-    &__logo {
-        height: 3.5rem;
-    }
+    
 
 
     &__text-box {
@@ -36,6 +33,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        @include respond(phone){
+            padding-top: 20rem;
+        }
     }
 }
 

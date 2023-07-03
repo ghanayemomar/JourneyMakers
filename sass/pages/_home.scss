@@ -12,8 +12,9 @@
         linear-gradient(to right bottom,
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 0.8)),
-        url(../img/nat-4.jpg);
+        url(../img/cover2.jpg);
     background-size: cover;
+    background-position: 50%;
 
     transform: skewY(-7deg);
     margin-top: -13rem;
@@ -60,8 +61,9 @@
 .book {
     background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%,
             transparent 50%),
-        url(../../img/nat-10.jpg);
+        url(../../img/cover3.jpg);
     background-size: cover;
+    background-position: 50%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
