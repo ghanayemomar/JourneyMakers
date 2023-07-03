@@ -1,21 +1,21 @@
 {
-  "name": "natours",
+  "name": "JourneyMakers",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "Landing page for JourneyMakers",
   "main": "index.js",
   "scripts": {
     "compile:sass":"node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ghanayemomar/Natours-WebPage.git"
+    "url": "git+https://github.com/ghanayemomar//JourneyMakers.git"
   },
   "author": "Omar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ghanayemomar/Natours-WebPage/issues"
+    "url": "https://github.com/ghanayemomar//JourneyMakers/issues"
   },
-  "homepage": "https://github.com/ghanayemomar/Natours-WebPage#readme",
+  "homepage": "https://github.com/ghanayemomar//JourneyMakers#readme",
   "devDependencies": {
     "node-sass": "^9.0.0"
   }
